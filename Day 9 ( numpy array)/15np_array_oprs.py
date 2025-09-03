@@ -7,13 +7,13 @@ a = np.array([[23,43,54],
               [43,54,24],
               [87,56,45]], dtype=float)
 print(a)
-print(a.min())#to take the minimun element of array
-print(a.max())#to take the maximun element of array 
+print(a.min())#to take the minimum element of array
+print(a.max())#to take the maximum element of array
 print(a.sum())#to take the sum of an array 
 print(a.sum(axis=0))#to take the sum of columns
 print(a.sum(axis=1))#to take the sum of rows
 print(np.sqrt(a))#to take the sqrt of an array 
-print(np.std(a))#to take the standert deviation of an array 
+print(np.std(a))#to take the standard deviation of an array
 
 a = a.reshape(3,4)# to reshape your array rows and columns
 print(a)

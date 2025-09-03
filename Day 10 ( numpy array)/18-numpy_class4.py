@@ -1,14 +1,56 @@
 #itrete over numpy array using nditer
+
 import numpy as np
-a = np.arange(12).reshape(3,4)
-print(a)
-for row in a:
-    for cell in row:
-      print(cell)
-#fletn list into an array 
-for cell in a.flatten():
-   print(cell)
-#nditer function
-for x in np.nditer(a,order='c'):#"c" it will go row by row for 
-    #colunm by colunm use "f" funcrion instead of "c".
-    print(x)  
+
+arr= np.arange(12).reshape(3,4)
+# print(arr)
+
+# for row in arr:
+#     for cell in row:
+#         print (cell)
+#     print(row)
+
+# for x in np.nditer(arr, order='F'): #order= 'c' for c order
+#     print(x)
+
+# for x in np.nditer(arr, order='F',
+#                    flags=['external_loop']):
+#     print(x)
+
+b = np.arange(3,15,4).reshape(3,1)
+# print(b)
+for x,y in np.nditer([arr,b]):
+    print(x,y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import numpy as np
+# a = np.arange(12).reshape(3,4)
+# print(a)
+# for row in a:
+#     for cell in row:
+#       print(cell)
+# #fletn list into an array
+# for cell in a.flatten():
+#    print(cell)
+# #nditer function
+# for x in np.nditer(a,order='c'):#"c" it will go row by row for
+#     #colunm by colunm use "f" funcrion instead of "c".
+#     print(x)
